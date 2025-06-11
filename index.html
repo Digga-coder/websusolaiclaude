@@ -28,7 +28,6 @@
 
     <!-- Optimized CSS -->
     <link rel="stylesheet" href="style-optimized.min.css">
-    <link rel="preload" href="videos/hero-background.mp4" as="video" type="video/mp4">
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -94,8 +93,8 @@
 <main id="main-content">
 
     <section id="hero" class="hero-optimized">
-        <video autoplay loop muted playsinline id="hero-video" poster="images/fondo1.jpg" loading="lazy"> 
-            <source src="videos/hero-background.mp4" type="video/mp4">
+        <video autoplay loop muted playsinline id="hero-video" poster="images/fondo1.jpg" loading="lazy">
+            <source data-src="videos/hero-background.mp4" type="video/mp4">
             Tu navegador no soporta el tag de video. Te recomendamos actualizarlo para una mejor experiencia.
         </video>
         <div class="hero-overlay"></div>

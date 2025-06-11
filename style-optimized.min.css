@@ -115,6 +115,8 @@ strong, b { font-weight: 700; color: var(--secondary-color); }
 .text-center { text-align: center; }
 .highlight { color: var(--accent-color); }
 .sr-only {
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:0;top:0;width:auto;height:auto;overflow:auto;background:#000;color:#fff;padding:1rem;z-index:1000}
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;
 }
@@ -392,6 +394,16 @@ strong, b { font-weight: 700; color: var(--secondary-color); }
 .service-link { color: var(--accent-color); font-weight: 700; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: auto; padding-top: 0.5rem; text-decoration: none; }
 .service-link:hover { gap: 0.75rem; color: var(--primary-hover); text-decoration: underline; }
 .service-link::after { content: none; }
+
+/* Align text centrally for improved consistency */
+.problem-card, .solution-card, .service-card, .testimonial-card,
+.faq-item, .industry-card, .value-item, .team-member,
+.portfolio-card-advanced .portfolio-content-advanced,
+.service-detail-card, .leader-card, .differentiator-card {
+    text-align: center;
+}
+.service-detail-card .service-header { flex-direction: column; align-items: center; }
+.service-detail-card .service-title-group { text-align: center; }
 
 /* Testimonials Grid (index.html) */
 .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 2.5rem; }

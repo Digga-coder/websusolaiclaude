@@ -393,6 +393,16 @@ strong, b { font-weight: 700; color: var(--secondary-color); }
 .service-link:hover { gap: 0.75rem; color: var(--primary-hover); text-decoration: underline; }
 .service-link::after { content: none; }
 
+/* Align text centrally for improved consistency */
+.problem-card, .solution-card, .service-card, .testimonial-card,
+.faq-item, .industry-card, .value-item, .team-member,
+.portfolio-card-advanced .portfolio-content-advanced,
+.service-detail-card, .leader-card, .differentiator-card {
+    text-align: center;
+}
+.service-detail-card .service-header { flex-direction: column; align-items: center; }
+.service-detail-card .service-title-group { text-align: center; }
+
 /* Testimonials Grid (index.html) */
 .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 2.5rem; }
 .testimonial-card { background: var(--white); padding: 2rem 1.75rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); transition: transform var(--transition-base), box-shadow var(--transition-base); display: flex; flex-direction: column; }

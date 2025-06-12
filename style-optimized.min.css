@@ -942,6 +942,9 @@ button:disabled .spinner { border-top-color: var(--text-light); border-color: rg
     .step-content { width: 90%; margin: 0 0 1.5rem 0 !important; text-align: center; }
     .step-number { position: relative; transform: none; margin-bottom: 1rem; }
     .success-metrics .metric-card.large { grid-column: span 1; } /* Large metric card ocupa una columna */
+    .container{max-width:100%;}
+    .section-header{max-width:100%;}
+    .leadership-showcase{display:flex;flex-direction:column;}
 }
 @media (max-width: 640px) { /* Móviles */
     .section-padding { padding: 50px 0; } /* Padding reducido */

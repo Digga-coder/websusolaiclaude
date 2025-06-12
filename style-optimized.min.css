@@ -299,7 +299,7 @@ strong, b { font-weight: 700; color: var(--secondary-color); }
     padding: 0.25rem 0.75rem; background-color: rgba(0,102,255,0.05); border-radius: 20px;
 }
 /* Centrados globales para secciones */
-section:has(h1 + p) {
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -307,8 +307,8 @@ section:has(h1 + p) {
     min-height: 60vh;
     padding: 2rem;
 }
-section:has(h1 + p) h1,
-section:has(h1 + p) h1 + p {
+section h1,
+section p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
